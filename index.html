@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Seu E-commerce</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slicktheme.css"/>
+</head>
+<body>
+    <!-- Navegação -->
+    <nav>
+        <div class="nav-wrapper">
+            <a href="index.html">Seu E-commerce</a>
+            <a href="carrinho.html">Carrinho</a>
+            <a href="contato.html">Contato</a>
+        </div>
+    </nav>
+   
+    <main>
+        <!-- Campo de Busca -->
+        <input type="text" id="campoBusca" placeholder="Digite para buscar produtos...">
+
+      <div class = "carousel">
+        <div><img src="https://img.lovepik.com/photo/40005/2090.jpg_wh860.jpg" alt=""></div>
+        <div><img src="https://img.lovepik.com/photo/40005/2090.jpg_wh860.jpg" alt=""></div>
+      </div>
+       
+        <!-- Seção de Produtos Eletrônicos -->
+        <section class="secao-produtos" data-categoria="eletronicos">
+            <h2>Eletrônicos</h2>
+            <article class="produto" data-id="1">
+                <h3><a href="produto.html?id=1">Produto 1</a></h3> <!-- Note o ?id=1 no href -->
+                <p>Preço: R$100</p>
+                <button class="adicionar-ao-carrinho">Adicionar ao Carrinho</button>
+            </article>
+            <!-- Adicione mais produtos conforme necessário -->
+        </section>
+       
+        <!-- Seção de Eletrodomésticos -->
+        <section class="secao-produtos" data-categoria="eletrodomesticos">
+            <h2>Eletrodomésticos</h2>
+            <article class="produto" data-id="2">
+                <h3><a href="produto.html?id=2">Produto 2</a></h3> <!-- Note o ?id=2 no href -->
+                <p>Preço: R$200</p>
+                <button class="adicionar-ao-carrinho">Adicionar ao Carrinho</button>
+            </article>
+            <!-- Adicione mais produtos conforme necessário -->
+        </section>
+       
+        <!-- Adicione mais seções conforme necessário -->
+    </main>
+   
+    <!-- Incluindo o arquivo de JavaScript -->
+    <script src="js/main.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+  <script>
+    $(document).ready(function(){
+      $('.carousel').slick({
+        autoplay: true,
+        dots: true,
+        infinite: true,
+        speed: 500,
+        fade: true,
+        cssEase: 'linear'
+      });
+    });
+  </script>
+</body>
+</html>
