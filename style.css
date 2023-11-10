@@ -1,0 +1,103 @@
+/* Reset básico para remover estilos padrão do navegador */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Definindo fonte padrão e cores do tema */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Estilo para a barra de navegação */
+nav .nav-wrapper {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    background-color: #007bff;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Estilo para o campo de busca */
+input#campoBusca {
+    display: block;
+    width: 80%;
+    margin: 20px auto;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Estilo para as seções de produtos */
+.secao-produtos {
+    margin: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
+}
+
+.secao-produtos h2 {
+    margin-bottom: 20px;
+}
+
+/* Estilo para cada produto */
+.produto {
+    margin-bottom: 20px;
+}
+
+.produto h3 {
+    margin-bottom: 10px;
+}
+
+/* Define um tamanho máximo para as imagens dos produtos e mantém a proporção */
+.img-produto {
+    max-width: 100%;
+    max-height: 300px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+/* Estilo básico para os botões */
+button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Remover sublinhado e definir cor para links */
+a {
+    text-decoration: none;
+    color: inherit; /* Isso fará com que o link tenha a mesma cor do texto ao redor. Você também pode definir uma cor específica, como '#000' (preto). */
+}
+
+/* Remover a borda de foco (seja cuidadoso ao fazer isso por motivos de acessibilidade) */
+a:focus {
+    outline: none;
+}
+
+/* Alterar a aparência de um link quando o mouse passa por cima */
+a:hover {
+    text-decoration: underline; /* Por exemplo, você pode querer adicionar o sublinhado de volta no hover para indicar clicabilidade */
+}
+
+/* Alterar a aparência de um link quando ele é clicado */
+a:active {
+    color: #555; /* Por exemplo, mude a cor para um tom de cinza quando o link é clicado */
+}
